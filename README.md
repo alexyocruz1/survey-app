@@ -1,36 +1,68 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Survey Form Project
 
-## Getting Started
+This project is a dynamic survey form built with React and Next.js. The form collects user responses to a series of questions and navigates through them, ensuring that users cannot proceed without selecting an answer. The answers are saved so that users can see their previous responses when navigating back.
 
-First, run the development server:
+## Features
+
+- **Dynamic Question Navigation:** Users can navigate through questions using "Next" and "Back" buttons.
+- **Answer Validation:** Users cannot proceed to the next question without selecting an answer.
+- **Answer Persistence:** Answers are saved, allowing users to see their previous responses when navigating back.
+- **Error Handling:** Displays an error message if the user tries to proceed without selecting an answer.
+- **Form Submission:** On completion, the form redirects to a recommendation page with the collected answers as query parameters.
+
+## Technologies Used
+
+- **React:** For building the user interface.
+- **Next.js:** For server-side rendering and routing.
+- **CSS Modules:** For styling the components.
+
+## Installation
+
+1. **Clone the repository:**
+
+```bash
+git clone https://github.com/your-username/survey-form.git
+cd survey-form
+```
+
+2. **Install dependencies:**
+
+```bash
+npm install
+```
+
+3. **Run the development server:**
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Usage
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+1. **Navigate through the questions:**
+   - Use the "Next" button to proceed to the next question.
+   - Use the "Back" button to return to the previous question.
 
-## Learn More
+2. **Answer Validation:**
+   - You must select an answer before proceeding to the next question.
+   - An error message will be displayed if you try to proceed without selecting an answer.
 
-To learn more about Next.js, take a look at the following resources:
+3. **Form Submission:**
+   - On the last question, provide your feedback and click "Submit Survey".
+   - You will be redirected to the recommendation page with your answers as query parameters.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Customization
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- **Questions:** You can customize the questions in the `SurveyForm.tsx` file by modifying the `questions` array.
+- **Titles:** You can customize the titles in the `SurveyForm.tsx` file by modifying the `titles` array.
+- **Styles:** You can customize the styles in the `SurveyForm.module.css` file.
 
-## Deploy on Vercel
+## Contributing
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Contributions are welcome! Please open an issue or submit a pull request for any improvements or bug fixes.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
